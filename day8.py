@@ -21,11 +21,9 @@ def is_visible(row_idx, col_idx):
 def viewing_distance(height, trees) -> int:
     dist = 0
     for tree in trees:
-        if tree >= height:
-            dist += 1
+        dist += 1
+        if tree >= height:            
             break
-        if tree < height:
-            dist += 1
     return dist
 
 
